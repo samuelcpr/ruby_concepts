@@ -5,7 +5,7 @@ puts "digite outro numero"
 y = gets.chomp.to_i
 puts "escolha a operação"
 
-valor = gets.chomp.to_s
+valor = gets.chomp
 
 soma = x + y
 subi = x - y
@@ -13,15 +13,15 @@ mult = x * y
 
 case valor
 
-when soma
-
+when "soma"
 puts " #{soma}"
-end
-when subi
+when "subi"
     puts "#{subi}"
-end
-when mult
+when "mult"
     puts "= #{mult}"
-end   
   
-  
+else
+    puts "Operação terminada"
+    
+
+  end
