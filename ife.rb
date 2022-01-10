@@ -1,28 +1,34 @@
-puts "escola a operação"
-print " (+) (-) (*)"
+puts "////////////////////////// CAUCULADORA \\\\\\\\\\\\\\\\\\\\\\\\"
+puts ""
+puts "escola a operação"              
+puts " (+) (-) (*) (/) (**) (%) "
 version = gets.chomp
 puts "digite um numero"
-num = gets.chomp.to_i 
+num = gets.chomp.to_f
 puts "digite outro numero"
-num2 = gets.chom.to_i
+num2 = gets.chomp.to_f
 
-version = "+"
-version = "-"
-version = "*"
 v1 = num + num2
 v2 = num - num2
 v3 = num * num2
-
-str = ARGV.first
-if version = "+"
-   puts v1
-  if version = "-"
-    puts v2
-    if version = "*"
-        puts v3
-  end
- end
-end
+v4 = num / num2
+v5 = num ** num2
+v6 = num % num2
+if version == "+"
+  puts " = #{v1}"
+elsif version == "-"
+  puts " = #{v2}"
+elsif version == "*"
+  puts " = #{v3}"
+elsif version == "/"
+  puts " = #{v4}"
+elsif version == "**"
+  puts " = #{v5}"
+elsif version == "%"
+  puts " = #{v6}"
 else
-puts "fim"
+  v4 = gets.chomp
+
 end
+
+
